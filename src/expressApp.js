@@ -25,6 +25,10 @@ export function configureApp(app, express) {
     app.use(morgan(env.nodeEnv === "production" ? "combined" : "dev"));
   }
 
+  app.get("/", (_req, res) => {
+    res.json({ success: true, message: "Tanu Enterprise API is running", health: "/api/health" });
+  });
+
   app.get("/api/health", (_req, res) => {
     res.json({ success: true, message: "API is healthy" });
   });
