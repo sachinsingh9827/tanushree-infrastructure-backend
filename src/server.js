@@ -1,6 +1,6 @@
 import { connectDatabase } from "./config/database.js";
 import { env, requireEnv } from "./config/env.js";
-import { app } from "./app.js";
+import { app } from "./expressApp.js";
 
 async function bootstrap() {
   requireEnv("JWT_ACCESS_SECRET", env.jwtAccessSecret);
