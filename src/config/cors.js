@@ -3,7 +3,8 @@ import { env } from "./env.js";
 
 const allowedOrigins = new Set([
   env.publicFrontendUrl,
-  env.adminFrontendUrl
+  env.adminFrontendUrl,
+  "https://tanuenterprise.vercel.app"
 ].filter(Boolean));
 
 export const corsMiddleware = cors({
