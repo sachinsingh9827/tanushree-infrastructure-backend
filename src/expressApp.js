@@ -26,7 +26,7 @@ export function configureApp(app, express) {
   }
 
   app.get("/", (_req, res) => {
-    res.json({ success: true, message: "Tanu Enterprise API is running", health: "/api/health" });
+    res.json({ success: true, message: "Tanushree Infrastructure API is running", health: "/api/health" });
   });
 
   app.get("/api/health", (_req, res) => {

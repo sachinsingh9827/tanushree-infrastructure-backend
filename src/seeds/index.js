@@ -17,7 +17,7 @@ async function seedAdmin() {
     { email: env.seed.adminEmail.toLowerCase() },
     {
       $set: {
-        name: "tanuenterprise Admin",
+        name: "Tanushree Infrastructure Admin",
         email: env.seed.adminEmail.toLowerCase(),
         passwordHash,
         role: "superadmin",
@@ -33,9 +33,9 @@ async function seedSettings() {
     { singletonKey: "site-settings" },
     {
       $setOnInsert: {
-        companyName: "tanuenterprise",
-        email: "info@example.com",
-        phone: "+91 00000 00000",
+        companyName: "Tanushree Infrastructure",
+        email: "",
+        phone: "+91 7489887978",
         footerText: "Building dependable spaces with care and precision."
       }
     },
@@ -50,16 +50,16 @@ async function seedPages() {
       title: "Practical construction work with a CMS-ready website.",
       content:
         "<h2>Construction support from planning to handover</h2><p>We help clients move from idea to execution with clear scope, practical sequencing and site coordination that keeps every decision visible.</p><ul><li>Residential, commercial, renovation and interior work</li><li>Progress-focused coordination with contractors and site teams</li><li>Quality checks for materials, finishing and handover readiness</li></ul>",
-      seoTitle: "tanuenterprise Construction Portfolio",
+      seoTitle: "Tanushree Infrastructure Construction Portfolio",
       seoDescription: "Construction, renovation and interior work with dependable planning, coordination and delivery."
     },
     {
       slug: "about",
-      title: "About tanuenterprise",
+      title: "About Tanushree Infrastructure",
       content:
-        "<p>tanuenterprise is a construction and project delivery company focused on dependable planning, quality execution and long-term client trust.</p><p>We support residential, commercial, renovation and interior projects with clear communication, disciplined site coordination and careful attention to finishing details.</p>",
-      seoTitle: "About tanuenterprise",
-      seoDescription: "Learn about tanuenterprise, our construction services, project values and commitment to reliable delivery."
+        "<p>Tanushree Infrastructure is a construction and project delivery company focused on dependable planning, quality execution and long-term client trust.</p><p>We support residential, commercial, renovation and interior projects with clear communication, disciplined site coordination and careful attention to finishing details.</p>",
+      seoTitle: "About Tanushree Infrastructure",
+      seoDescription: "Learn about Tanushree Infrastructure, our construction services, project values and commitment to reliable delivery."
     },
     {
       slug: "services",
@@ -75,7 +75,7 @@ async function seedPages() {
       content:
         "<h2>Work that shows planning, progress and finish</h2><p>Our project portfolio highlights different stages of construction delivery, from early planning to completed spaces ready for use.</p>",
       seoTitle: "Construction Projects",
-      seoDescription: "Explore completed, ongoing and upcoming construction projects by tanuenterprise."
+      seoDescription: "Explore completed, ongoing and upcoming construction projects by Tanushree Infrastructure."
     },
     {
       slug: "gallery",
@@ -83,15 +83,15 @@ async function seedPages() {
       content:
         "<h2>Visual progress from site to finish</h2><p>The gallery brings together construction progress, finished details, materials and site moments so visitors can quickly understand the quality and range of work.</p>",
       seoTitle: "Project Gallery",
-      seoDescription: "View construction project images and highlights from tanuenterprise."
+      seoDescription: "View construction project images and highlights from Tanushree Infrastructure."
     },
     {
       slug: "contact",
       title: "Start your project conversation with our team.",
       content:
         "<h2>Tell us what you want to build</h2><p>Use the enquiry form to share your project type, location, budget range and expected timeline. The admin team can review every submission from the dashboard.</p>",
-      seoTitle: "Contact tanuenterprise",
-      seoDescription: "Share your construction, renovation or interior requirement with tanuenterprise."
+      seoTitle: "Contact Tanushree Infrastructure",
+      seoDescription: "Share your construction, renovation or interior requirement with Tanushree Infrastructure."
     }
   ];
 
@@ -152,7 +152,7 @@ async function seedProjects() {
         {
           $setOnInsert: {
             title,
-            shortDescription: `${title} project by tanuenterprise.`,
+            shortDescription: `${title} project by Tanushree Infrastructure.`,
             status,
             published: true,
             featured: index < 2,

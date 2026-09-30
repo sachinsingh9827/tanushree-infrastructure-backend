@@ -1,6 +1,6 @@
-# Tanu Enterprise Backend
+# Tanushree Infrastructure Backend
 
-REST API and content management backend for Tanu Enterprise, built with Node.js, Express, and MongoDB.
+REST API and content management backend for Tanushree Infrastructure, built with Node.js, Express, and MongoDB.
 
 ## Setup
 

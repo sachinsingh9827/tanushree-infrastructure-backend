@@ -29,7 +29,7 @@ function settingsPayload(body) {
 
 const publicPageDefaults = {
   home: "Practical construction work with a CMS-ready website.",
-  about: "About tanuenterprise",
+  about: "About Tanushree Infrastructure",
   services: "Builder services for practical project delivery.",
   projects: "Portfolio projects across completed, ongoing and upcoming work.",
   gallery: "Project images and construction highlights.",
@@ -129,7 +129,7 @@ export const uploadEditorImage = asyncHandler(async (req, res) => {
 export const getAdminSettings = asyncHandler(async (_req, res) => {
   const settings = await SiteSettings.findOneAndUpdate(
     { singletonKey: "site-settings" },
-    { $setOnInsert: { singletonKey: "site-settings", companyName: "tanuenterprise" } },
+    { $setOnInsert: { singletonKey: "site-settings", companyName: "Tanushree Infrastructure" } },
     { upsert: true, new: true }
   ).lean();
 

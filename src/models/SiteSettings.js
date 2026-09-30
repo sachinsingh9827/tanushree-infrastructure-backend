@@ -4,7 +4,7 @@ import { ImageSchema } from "./shared/image.schema.js";
 const siteSettingsSchema = new mongoose.Schema(
   {
     singletonKey: { type: String, default: "site-settings", unique: true },
-    companyName: { type: String, default: "tanuenterprise" },
+    companyName: { type: String, default: "Tanushree Infrastructure" },
     logo: ImageSchema,
     favicon: ImageSchema,
     email: String,

@@ -12,7 +12,7 @@ async function bootstrap() {
   await connectDatabase();
 
   const server = app.listen(env.port, () => {
-    console.log(`tanuenterprise API running on port ${env.port}`);
+    console.log(`Tanushree Infrastructure API running on port ${env.port}`);
   });
 
   server.on("error", (error) => {
