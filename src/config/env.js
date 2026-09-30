@@ -21,7 +21,7 @@ export const env = {
     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
     apiKey: process.env.CLOUDINARY_API_KEY,
     apiSecret: process.env.CLOUDINARY_API_SECRET,
-    rootFolder: process.env.CLOUDINARY_ROOT_FOLDER || "tanuenterprise"
+    rootFolder: process.env.CLOUDINARY_ROOT_FOLDER || "tanushree-infrastructure"
   },
   smtp: {
     host: process.env.SMTP_HOST,
