@@ -4,7 +4,7 @@ import { app } from "./app.js";
 
 async function bootstrap() {
   requireEnv("JWT_ACCESS_SECRET", env.jwtAccessSecret);
-  console.log(`Connecting to MongoDB: ${env.mongoUri}`);
+  console.log("Connecting to MongoDB");
   await connectDatabase();
 
   const server = app.listen(env.port, () => {
