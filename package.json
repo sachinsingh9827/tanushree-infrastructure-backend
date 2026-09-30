@@ -12,6 +12,9 @@
     "lint": "node --check src/server.js",
     "test": "node --test"
   },
+  "overrides": {
+    "jsdom": "25.0.1"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
